@@ -45,7 +45,7 @@ docker build -t ssehub .
 
 ```
 docker pull quay.io/vgno/ssehub
-docker run -v ./config/:/ssehub/conf/ -p 8080:8080 quay.io/vgno/ssehub
+docker run -v /absolute_path/to/folder/containing/config_file/:/etc/ssehub/ -p 8080:8080 quay.io/vgno/ssehub
 ```
 
 [![Docker Repository on Quay](https://quay.io/repository/vgno/ssehub/status "Docker Repository on Quay")](https://quay.io/repository/vgno/ssehub)
